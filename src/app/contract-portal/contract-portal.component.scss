@@ -3,6 +3,8 @@
     padding: 0px !important;
     font-family: sans-serif;
     background-color: #d8d8d8;
+    height: 800px;
+    
     .header-section{
         height: 90px;
         background-color: #2b3a47;
@@ -22,5 +24,28 @@
                 color: #3dbbf3;
             }
         }
+    }
+
+    .container{
+        margin: auto;
+        margin-top: 2%;
+        padding: 0px !important;
+        height: 500px;
+        width: 900px;
+        .container-main{
+            .mat-stepper-horizontal{
+                height: 500px;
+            }
+            .photo{
+                width:100px;
+                height: 100px;
+                margin: auto;
+                border-radius: 50%;
+                background-color: #d8d8d8;
+            }
+        }
+    }
+    .mat-horizontal-stepper-header .mat-step-icon{
+        display: none !important;
     }
 }
