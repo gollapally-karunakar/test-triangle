@@ -1,0 +1,26 @@
+
+.container-fluid{
+    padding: 0px !important;
+    font-family: sans-serif;
+    background-color: #d8d8d8;
+    .header-section{
+        height: 90px;
+        background-color: #2b3a47;
+        display:flex;
+        justify-content: space-between;
+
+        .logo-content{
+            font-size: 40px;
+            margin: 1% !important;
+        }
+        p {
+            color: #fff;
+            margin-bottom: 0rem !important;
+            margin: 2% !important;
+            font-size: 22px;
+            span{
+                color: #3dbbf3;
+            }
+        }
+    }
+}
