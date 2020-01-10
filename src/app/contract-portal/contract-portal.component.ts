@@ -11,6 +11,7 @@ export class ContractPortalComponent implements OnInit {
   firstFormGroup: FormGroup;
   skillFormGroup: FormGroup;
   isOptional = false;
+  public showVisaLis:boolean = false;
   
   public skillsToBeAdded:any = [
     {
@@ -66,6 +67,10 @@ export class ContractPortalComponent implements OnInit {
       endDate:'',
       workLocation:''
     });
+  }
+
+  showList(){
+    this.showVisaLis = !this.showVisaLis;
   }
 
 }

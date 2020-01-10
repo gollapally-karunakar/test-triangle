@@ -105,7 +105,7 @@
               <div class="col-md-12">
                 <div class="row">
                   <div class="col-md-6">
-                    <h2>Availability</h2>
+                    <h4>Availability</h4>
                   </div>
                   <div class="col-md-3">
                     <mat-form-field>
@@ -123,37 +123,83 @@
             <div class="row">
               <div class="col-md-12">
                 <div class="row">
-                  <div class="col-md-6">
-                    <h2>Salary Expectations</h2>
+                  <div class="col-md-4">
+                    <h4>Salary Expectations</h4>
                   </div>
                   <div class="col-md-2">
                       <mat-slider min="4" max="20" step="1" value="2"></mat-slider>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-3">
                     <mat-form-field>
                       <input matInput placeholder="Start Date" formControlName="startDate">
                     </mat-form-field>
                   </div>
-                  <div class="col-md-2">
+                  <div class="col-md-3">
                     <mat-form-field>
                       <input matInput placeholder="End Date" formControlName="endDate">
                     </mat-form-field>
                   </div>
                 </div>
                 <div class="row">
-                  <div class="col-md-6">
-                    <h2>Salary Expectations</h2>
+                  <div class="col-md-4">
+                    <h4>Countries of interest</h4>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-4">
                     <mat-form-field>
                       <input matInput placeholder="Where you would like to work?" formControlName="workLocation">
                     </mat-form-field>
                   </div>
-                  <div class="col-md-3">
-                    <mat-form-field>
-                      <input matInput placeholder="End Date" formControlName="endDate">
-                    </mat-form-field>
+                  <div class="col-md-4">
+                    <button mat-button (click)="showList()" style="margin-top: 5%;">Visa or sponsorship required?</button>
+                    <div class="visa-list" *ngIf="showVisaLis">
+                      <div class="row">
+                        <div class="col-md-4">Ireland</div>
+                        <div class="col-md-8">
+                          <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">Yes</mat-radio-button>
+                            <mat-radio-button value="2">No</mat-radio-button>
+                          </mat-radio-group>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">UK</div>
+                        <div class="col-md-8">
+                          <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">Yes</mat-radio-button>
+                            <mat-radio-button value="2">No</mat-radio-button>
+                          </mat-radio-group>
+                        </div>
+                      </div>
+                      <div class="row">
+                        <div class="col-md-4">India</div>
+                        <div class="col-md-8">
+                          <mat-radio-group aria-label="Select an option">
+                            <mat-radio-button value="1">Yes</mat-radio-button>
+                            <mat-radio-button value="2">No</mat-radio-button>
+                          </mat-radio-group>
+                        </div>
+                      </div>
+                    </div>
                   </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <h4>Prefered Positions</h4>
+                  </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <mat-form-field>
+                          <input matInput placeholder="Search" formControlName="skillCtrl" required>
+                        </mat-form-field>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="selected-skills">
+                            <mat-chip-list aria-label="skill-selection">
+                                <mat-chip *ngFor="let item of skillsToBeAdded"><i class="material-icons" style="color:#3dbbf3">remove_circle</i> {{item.title}}</mat-chip>
+                            </mat-chip-list>
+                        </div>
+                    </div>
                 </div>
               </div>
             </div>
