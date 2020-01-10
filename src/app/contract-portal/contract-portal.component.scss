@@ -30,22 +30,61 @@
         margin: auto;
         margin-top: 2%;
         padding: 0px !important;
-        height: 500px;
+        height: 100%;
         width: 900px;
         .container-main{
             .mat-stepper-horizontal{
-                height: 500px;
+                height: 100%;
             }
             .photo{
-                width:100px;
-                height: 100px;
-                margin: auto;
+                width:150px;
+                margin-left: 7%;
+                height: 150px;
                 border-radius: 50%;
                 background-color: #d8d8d8;
             }
+            .material-icons{
+                margin-top: 1%;
+                margin-right: 2%;
+            }
+            .upload-block{
+                margin-top: 4%;
+            }
+            .upload-button{
+                font-size: 15px;
+                width: 150px;
+                background-color: #2a3a4a;
+                color: #fff;
+            }
         }
     }
-    .mat-horizontal-stepper-header .mat-step-icon{
-        display: none !important;
+    mat-horizontal-stepper form{
+        margin-top: 2%;
+    }
+    .button-block{
+        width: 30%;
+        margin: auto;
+        margin-top: 2%;
+        display: flex;
+        .add-background-color{
+            margin: auto;
+            display: block;
+            font-size: 16px;
+            background-color: #3dbbf3;
+            color: #fff;
+            width: 100px;
+        }
+    }
+    .skill-header{
+        margin-top: 2%;
+    }
+    .selected-skills{
+        margin-top: 5%;
+        mat-chip{
+            width: 205px;
+            justify-content: space-between;
+            font-weight: 300;
+        }
     }
 }
+
